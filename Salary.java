@@ -7,11 +7,13 @@
  */
 public class Salary
 {
-    public int salary(){
+    /*
+     * public int salary(int hours, int hourlyWage){
     hourlyWage * hours = salary;
     int taxes = 0.3;
     int deductions = salary * taxes;
     int netPay = salary - deductions;
     System.out.println("The net pay is:" + netPay);
-    }
+    } 
+     */
 }
