@@ -16,4 +16,14 @@ public class Salary
     System.out.println("The net pay is:" + netPay);
     } 
      */
+    
+    
+public double salary(int hourlyWage, int hours){
+    double salary = hourlyWage * hours;
+    double taxes = 0.3;
+    double deductions = salary * taxes;
+    double netPay = salary - deductions;
+    System.out.println("The net pay is:" + netPay);
+    return netPay;
+    } 
 }
