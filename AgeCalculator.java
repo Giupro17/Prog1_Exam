@@ -20,4 +20,15 @@ public class AgeCalculator
     // }
     
 // }
+  public int getAge(int yearOfBirth, int age){
+   age = currentYear - yearOfBirth;
+   int yearsToWait = 16 - age;
+         if (age >= 16){
+            System.out.println("Able to drive");
+         }
+         else{
+            System.out.println("User has to wait," + yearsToWait + "years");
+    }
+    return yearsToWait;
+ }
 }
