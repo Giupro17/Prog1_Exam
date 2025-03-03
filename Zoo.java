@@ -8,12 +8,29 @@ import java.util.ArrayList;
 
 public class Zoo
 {
-  // private ArrayList<Bird> zooBirds;
-  // int countBlueBirds;{
-      // while (int BlueBirds);{
-          // listArrayList<>;
-          // count "blue";
-          
-      // }
-  // }
+    private ArrayList<Bird> zooBird;
+  public Zoo()
+  {
+      zooBird = new ArrayList<>();
+      zooBird.add(new Bird("blue","blue jay",2));
+      zooBird.add(new Bird("red","red cardinal",1));
+      zooBird.add(new Bird("blue","red cardinal",1));
+      zooBird.add(new Bird("red", "red cardinal",1));
+      zooBird.add(new Bird("blue","red cardinal",1));
+      zooBird.add(new Bird("blue","red cardinal",1));
+      zooBird.add(new Bird("blue","red cardinal",1));
+      zooBird.add(new Bird("red", "red cardinal",1));
+      zooBird.add(new Bird("red", "red cardinal",1));
+  }
+  
+  int countBlueBirds()
+{  
+      int countBlueBirds = 0;
+      for(Bird b : zooBird){
+          if (b.color().equals("blue")){
+              countBlueBirds++;
+          }
+  }
+  return countBlueBirds;
+}
 }

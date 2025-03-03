@@ -18,7 +18,9 @@ public class Bird
         this.age = age;
     }
     
-
+    public String color(){
+        return color;
+    }
     
     public void sing()
     {
